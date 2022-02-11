@@ -1,0 +1,166 @@
+/* Importing Open Sans font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
+
+* {
+  font-family: "Open Sans";
+}
+:root {
+  --color-primary: #387abb;
+  --color-green: #429c40;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+#brand-logo {
+  width: auto;
+  height: 64px;
+}
+.nav-list {
+  list-style-type: none;
+}
+.nav-list li {
+  display: inline;
+}
+ul li a {
+  width: 80px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+ul li a:link {
+  color: black;
+}
+ul li a:visited {
+  color: black;
+}
+
+ul li a:hover {
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 50px;
+}
+ul li a:active {
+  color: white;
+}
+.active {
+  color: white !important;
+  background-color: var(--color-primary);
+  border-radius: 50px;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 64px 0px 64px;
+}
+.menu-item-text {
+  color: var(--color-green);
+  font-size: 24px;
+  font-weight: 600;
+}
+.show-option a {
+  padding: 20px;
+  color: var(--color-green);
+  font-weight: bold;
+  font-size: 14px;
+}
+.show-option select {
+  border: none;
+  width: fit-content;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 8px 56px;
+}
+.outer {
+  width: 296px;
+  height: 240px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 8px;
+  background-image: url(../images/box-and-frame-new.svg);
+}
+.inner {
+  width: 78%;
+  height: 73%;
+  margin-top: 11%;
+  margin-left: 11%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.inner-text {
+  width: 78%;
+  height: 73%;
+  margin-top: 11%;
+  margin-left: 11%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.inner-text {
+  display: none;
+}
+.inner img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  margin: 11.5% 0;
+}
+#cell-img {
+  width: 85%;
+  margin-top: 1%;
+}
+.outer:hover .inner-text {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  color: var(--color-green);
+}
+.outer:hover .inner {
+  display: none;
+}
+
+.copyright-text {
+  font-size: 13px;
+}
+.copyright-text p:last-child {
+  position: relative;
+  left: 14px;
+  margin-top: -8px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  padding: 0 6px;
+}
+.input-box {
+  border: none;
+  border-bottom: 1px solid var(--color-green);
+  height: 32px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: rgb(64, 233, 233);
+}
+
